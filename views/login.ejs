@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="/scripts/Login.js" defer></script>
+
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="Login">
+        <form id="loginForm" onsubmit="validateLogin(event)">
+            <h1>Login</h1>
+            <hr>
+            <label for="loginUsername">First Name</label>
+            <input type="text" id="loginUsername" placeholder="Enter Username" name="Username" required>
+            
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter Password" name="Password" required>
+            
+            <br><br>
+            
+            <div class="buttons">
+                <button type="button" class="Cancelbtn" onclick="redirectToHome()">Cancel</button>
+                <button type="submit" class="loginbtn" onclick="redirectToHome()">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
